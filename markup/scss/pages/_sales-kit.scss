@@ -1,0 +1,115 @@
+.sales-holder {
+  overflow: hidden;
+  font-size: 22px;
+  line-height: 1.27;
+  color: #1f1f1f;
+  padding: 50px 0 0;
+  border-top: 1px solid #d9d8d7;
+
+  @include media ('<desktop') {
+    font-size: 18px;
+    padding: 20px 0 0;
+  }
+
+  @include media ('<tablet') {
+    font-size: 14px;
+  }
+
+  @include media ('<phone') {
+    padding-top: 0;
+  }
+
+  .article-wrap {
+    max-width: 940px;
+    @extend %clearfix;
+  }
+
+  .article {
+    overflow: hidden;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #d9d8d7;
+    padding-bottom: 49px;
+
+    @include media ('<desktop') {
+      margin-bottom: 30px;
+      padding-bottom: 29px;
+    }
+
+    .image-hold {
+      float: left;
+      width: 49.7%;
+
+      @include media ('<tablet') {
+        width: 50%;
+      }
+
+      @include media ('<phone') {
+        float: none;
+        width: auto;
+        margin-bottom: 15px;
+      }
+
+      img{
+        width: 100%;
+      }
+    }
+
+    .txt {
+      overflow: hidden;
+      padding: 0 0 0 37px;
+
+      @include media ('<desktop') {
+        padding: 0 0 0 25px;
+      }
+
+      @include media ('<tablet') {
+        padding: 0 0 0 20px;
+      }
+
+      @include media ('<phone') {
+        padding: 0;
+      }
+
+      .txt-frame{
+        overflow: hidden;
+        min-height: 99px;
+
+        @include media ('<desktop') {
+          min-height: 10px;
+        }
+      }
+
+      p {
+        margin-bottom: 15px;
+      }
+    }
+
+    .btn-hold {
+      overflow: hidden;
+      max-width: 428px;
+
+      @include media ('<phone') {
+        max-width: none;
+      }
+
+      .btn {
+        display: block;
+        text-transform: uppercase;
+        font-size: 15px;
+        line-height: 1.2;
+        font-weight: bold;
+        padding: 15px 10px;
+
+        @include media ('<desktop') {
+          font-size: 14px;
+          padding: 13px 10px;
+        }
+
+        @include media ('<tablet') {
+          padding: 10px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

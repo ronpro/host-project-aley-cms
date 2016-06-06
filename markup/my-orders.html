@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AleyShalechetCMS</title>
+  <link media="all" rel="stylesheet" href="css/main.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" defer></script>
+  <script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+  <script type="text/javascript" src="js/jquery.main.js" defer></script>
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="logo">
+            <a href="dashboard.html"><img src="images/logo.png" height="41" width="156" alt="ALEY SHALECHET"></a>
+          </div>
+          <div class="user-right">
+            <div class="user-name">
+              <a href="#"> <span class="icon-avatar"></span>Mike Mor</a>
+              <div class="user-drop">
+                <ul>
+                  <li><a href="my-profile.html">My Profile</a></li>
+                  <li><a href="deposit.html">Make a Deposit</a></li>
+                  <li><a href="#">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="user-amount">
+              $35 <a href="#" class="icon icon-arrow-down"></a>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="nav-holder">
+        <div class="container">
+          <nav class="nav">
+            <div class="nav-opener-holder">
+              <a href="#" class="nav-opener"><span></span></a>
+            </div>
+            <div class="nav-slide">
+              <ul class="main-nav">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li class="active"><a href="my-orders.html">My Orders</a></li>
+                <li><a href="my-inventory.html">my inventory</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="shopping-cart">
+            <a href="shopping-cart-positive.html"><span class="badge">4</span>Shopping Cart</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <div class="container">
+        <header class="header">
+          <h1 class="grid-view">MY ORDERS (53)</h1>
+          <form action="#" class="filter-form custom-form">
+            <select class="filter-select select5">
+              <option>All Orders </option>
+              <option>All Orders </option>
+              <option>All Orders </option>
+              <option>All Orders </option>
+              <option>All Orders </option>
+            </select>
+          </form>
+        </header>
+        <section class="widget last-orders my-orders">
+          <table class="table2">
+            <colgroup>
+            <col class="col1">
+            <col class="col2">
+            <col class="col3">
+            <col class="col4">
+            <col class="col5">
+            <col class="col6">
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="order-date">Order Date</th>
+              <th class="order-id">Order ID</th>
+              <th>Qty.</th>
+              <th>Price</th>
+              <th class="status-td">Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Order Date" class="order-date"><span>
+                <time datetime="2015-03-22">22/3.2015</time></span>
+              </td>
+              <td data-label="Order ID" class="order-id"><span>8673687</span></td>
+              <td data-label="Qty."><span>5</span></td>
+              <td data-label="Price"> <span>$780</span> </td>
+              <td data-label="Status" class="status-td">
+                <div class="tbl-content">
+                  <ul class="btns">
+                    <li>
+                      <a href="#" class="btn btn-blue">New order</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <div class="tbl-content">
+                  <ul class="other-btns">
+                    <li>
+                      <a href="#" class="btn btn-dark">View Order</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Order Date" class="order-date"><span>
+                <time datetime="2015-03-22">22/3.2015</time></span>
+              </td>
+              <td data-label="Order ID" class="order-id"><span>8673687</span></td>
+              <td data-label="Qty."><span>5</span></td>
+              <td data-label="Price"> <span>$780</span> </td>
+              <td data-label="Status" class="status-td">
+                <div class="tbl-content">
+                  <ul class="btns">
+                    <li>
+                      <a href="#" class="btn btn-green-1">Send to mike</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <div class="tbl-content">
+                  <ul class="other-btns">
+                    <li>
+                      <a href="#" class="btn btn-dark">View Order</a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-dark">Confirm Arrival</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Order Date" class="order-date"><span>
+                <time datetime="2015-03-22">22/3.2015</time></span>
+              </td>
+              <td data-label="Order ID" class="order-id"><span>8673687</span></td>
+              <td data-label="Qty."><span>5</span></td>
+              <td data-label="Price"> <span>$780</span> </td>
+              <td data-label="Status" class="status-td">
+                <div class="tbl-content">
+                  <ul class="btns">
+                    <li>
+                      <a href="#" class="btn btn-grey">Added to Mike Inventory</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <div class="tbl-content">
+                  <ul class="other-btns">
+                    <li>
+                      <a href="#" class="btn btn-dark">View Order</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Order Date" class="order-date"><span>
+                <time datetime="2015-03-22">22/3.2015</time></span>
+              </td>
+              <td data-label="Order ID" class="order-id"><span>8673687</span></td>
+              <td data-label="Qty."><span>5</span></td>
+              <td data-label="Price"> <span>$780</span> </td>
+              <td data-label="Status" class="status-td">
+                <div class="tbl-content">
+                  <ul class="btns">
+                    <li>
+                      <a href="#" class="btn btn-grey">Added to Mike Inventory</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <div class="tbl-content">
+                  <ul class="other-btns">
+                    <li>
+                      <a href="#" class="btn btn-dark">View Order</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Order Date" class="order-date"><span>
+                <time datetime="2015-03-22">22/3.2015</time></span>
+              </td>
+              <td data-label="Order ID" class="order-id"><span>8673687</span></td>
+              <td data-label="Qty."><span>5</span></td>
+              <td data-label="Price"> <span>$780</span> </td>
+              <td data-label="Status" class="status-td">
+                <div class="tbl-content">
+                  <ul class="btns">
+                    <li>
+                      <a href="#" class="btn btn-grey">Added to Mike Inventory</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <div class="tbl-content">
+                  <ul class="other-btns">
+                    <li>
+                      <a href="#" class="btn btn-dark">View Order</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Order Date" class="order-date"><span>
+                <time datetime="2015-03-22">22/3.2015</time></span>
+              </td>
+              <td data-label="Order ID" class="order-id"><span>8673687</span></td>
+              <td data-label="Qty."><span>5</span></td>
+              <td data-label="Price"> <span>$780</span> </td>
+              <td data-label="Status" class="status-td">
+                <div class="tbl-content">
+                  <ul class="btns">
+                    <li>
+                      <a href="#" class="btn btn-grey">Added to Mike Inventory</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <div class="tbl-content">
+                  <ul class="other-btns">
+                    <li>
+                      <a href="#" class="btn btn-dark">View Order</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Order Date" class="order-date"><span>
+                <time datetime="2015-03-22">22/3.2015</time></span>
+              </td>
+              <td data-label="Order ID" class="order-id"><span>8673687</span></td>
+              <td data-label="Qty."><span>5</span></td>
+              <td data-label="Price"> <span>$780</span> </td>
+              <td data-label="Status" class="status-td">
+                <div class="tbl-content">
+                  <ul class="btns">
+                    <li>
+                      <a href="#" class="btn btn-grey">Added to Mike Inventory</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <div class="tbl-content">
+                  <ul class="other-btns">
+                    <li>
+                      <a href="#" class="btn btn-dark">View Order</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Order Date" class="order-date"><span>
+                <time datetime="2015-03-22">22/3.2015</time></span>
+              </td>
+              <td data-label="Order ID" class="order-id"><span>8673687</span></td>
+              <td data-label="Qty."><span>5</span></td>
+              <td data-label="Price"> <span>$780</span> </td>
+              <td data-label="Status" class="status-td">
+                <div class="tbl-content">
+                  <ul class="btns">
+                    <li>
+                      <a href="#" class="btn btn-grey">Added to Mike Inventory</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <div class="tbl-content">
+                  <ul class="other-btns">
+                    <li>
+                      <a href="#" class="btn btn-dark">View Order</a>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+</div>
+</body>
+</html>

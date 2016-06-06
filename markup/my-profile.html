@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AleyShalechetCMS</title>
+  <link media="all" rel="stylesheet" href="css/main.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" defer></script>
+  <script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+  <script type="text/javascript" src="js/jquery.main.js" defer></script>
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="logo">
+            <a href="dashboard.html"><img src="images/logo.png" height="41" width="156" alt="ALEY SHALECHET"></a>
+          </div>
+          <div class="user-right">
+            <div class="user-name">
+              <a href="#"> <span class="icon-avatar"></span>Mike Mor</a>
+              <div class="user-drop">
+                <ul>
+                  <li><a href="my-profile.html">My Profile</a></li>
+                  <li><a href="deposit.html">Make a Deposit</a></li>
+                  <li><a href="#">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="user-amount">
+              $35 <a href="#" class="icon icon-arrow-down"></a>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="nav-holder">
+        <div class="container">
+          <nav class="nav">
+            <div class="nav-opener-holder">
+              <a href="#" class="nav-opener"><span></span></a>
+            </div>
+            <div class="nav-slide">
+              <ul class="main-nav">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="my-orders.html">My Orders</a></li>
+                <li><a href="my-inventory.html">my inventory</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="shopping-cart">
+            <a href="shopping-cart-positive.html"><span class="badge">4</span>Shopping Cart</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <div class="container">
+        <div class="my-profile two-columns">
+          <div class="column">
+            <section class="block">
+              <h1>Perrsonal Details</h1>
+              <form action="#" class="personal-form personal-form1 custom-form form-validation">
+                <fieldset>
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-group">
+                        <label for="fname">First Name:</label>
+                        <div class="input-wrap">
+                          <input type="text" id="fname" class="form-control" data-required="true">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-group">
+                        <label for="lname">Last Name:</label>
+                        <div class="input-wrap">
+                          <input type="text" id="lname" class="form-control" data-required="true">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrap">
+                      <input type="email" id="email" class="form-control" data-required="true">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email1">Email Address <span class="error-msg">// <span>Email address is not valid</span></span></label>
+                    <div class="input-wrap">
+                      <input type="email" id="email1" class="form-control" data-required="true">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <div class="input-wrap">
+                      <input type="text" id="company" class="form-control" data-required="true">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="city">City</label>
+                    <div class="input-wrap">
+                      <input type="text" id="city" class="form-control" data-required="true">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-group">
+                        <label for="country">Country</label>
+                        <div class="input-wrap">
+                          <select name="country" class="bg-gradient" id="country" data-required="true">
+                            <option>country</option>
+                            <option>country</option>
+                            <option>country</option>
+                            <option>country</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-group">
+                        <label for="state">State</label>
+                        <div class="input-wrap">
+                          <select name="country" id="state" class="bg-gradient" data-required="true">
+                            <option>State</option>
+                            <option>State</option>
+                            <option>State</option>
+                            <option>State</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-group">
+                        <label for="zip">Zip</label>
+                        <div class="input-wrap">
+                          <input type="text" id="zip" class="form-control" data-required="true" data-type="number">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-group">
+                        <label for="appartment">Apartment/suite</label>
+                        <div class="input-wrap">
+                          <input type="text" id="appartment" class="form-control" data-required="true">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="p-number">Phone number</label>
+                    <div class="input-wrap">
+                      <input type="tel" id="p-number" class="form-control" data-type="number" data-required="true">
+                    </div>
+                  </div>
+                  <div class="form-group alter-form">
+                    <label for="website">Company Website</label>
+                    <div class="input-wrap">
+                      <input type="text" id="website" class="form-control" data-required="true">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="checkbox" id="check1" data-required="true">
+                    <div class="check-wrap">
+                      <label for="check1">
+                        Yes - I want to receive email notifications for special offers and sales from 
+                        this website
+                      </label>
+                    </div>
+                  </div>
+                  <div class="btn-hold">
+                    <input type="submit" value="Save Changes" class="btn btn-green-3">
+                  </div>
+                </fieldset>
+              </form>
+            </section>
+          </div>
+          <div class="column">
+            <section class="block psw-block">
+              <h2>Account Password</h2>
+              <form action="#" class="personal-form custom-form form-validation">
+                <fieldset>
+                  <div class="form-group">
+                    <label for="c-psw">Current Password:</label>
+                    <div class="input-wrap">
+                      <input type="password" id="c-psw" class="form-control" data-required="true">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-group">
+                        <label for="n-psw">New Password</label>
+                        <div class="input-wrap">
+                          <input type="password" class="form-control" id="n-psw" data-required="true" data-confirm="some_uniqp">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-group">
+                        <label for="r-psw">Retype New Password</label>
+                        <div class="input-wrap">
+                          <input type="password" id="r-psw" class="form-control" data-required="true" data-confirm="some_uniqp">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-hold btn-hold1">
+                    <input type="submit" value="Save Changes" class="btn btn-green-3">
+                  </div>
+                </fieldset>
+              </form>
+            </section>
+            <section class="block address-block">
+              <h2>My Addresses</h2>
+              <ul class="addresses">
+                <li>
+                  <div class="address">
+                    <address>JOHN  DOE &nbsp;  &nbsp; &nbsp;421 E DRACHMAN &nbsp;  &nbsp;TUCSON AZ 85705-7598 &nbsp;  &nbsp;USA</address>
+                  </div>
+                  <div class="action">
+                  <a href="#edit" class="btn btn-dark lightbox">Edit</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="address">
+                    <address>JOHN  DOE &nbsp;  &nbsp; &nbsp;421 E DRACHMAN &nbsp;  &nbsp;TUCSON AZ 85705-7598 &nbsp;  &nbsp;USA</address>
+                  </div>
+                  <div class="action">
+                    <a href="#edit" class="btn btn-dark lightbox">Edit</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="address">
+                    <address>JOHN  DOE &nbsp;  &nbsp; &nbsp;421 E DRACHMAN &nbsp;  &nbsp;TUCSON AZ 85705-7598 &nbsp;  &nbsp;USA</address>
+                  </div>
+                  <div class="action">
+                    <a href="#edit" class="btn btn-dark lightbox">Edit</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="address">
+                    <address>JOHN  DOE &nbsp;  &nbsp; &nbsp;421 E DRACHMAN &nbsp;  &nbsp;TUCSON AZ 85705-7598 &nbsp;  &nbsp;USA</address>
+                  </div>
+                  <div class="action">
+                    <a href="#edit" class="btn btn-dark lightbox">Edit</a>
+                  </div>
+                </li>
+                <li class="active">
+                  <div class="address">
+                    <address>JOHN  DOE &nbsp;  &nbsp; &nbsp;421 E DRACHMAN &nbsp;  &nbsp;TUCSON AZ 85705-7598 &nbsp;  &nbsp;USA</address>
+                  </div>
+                  <div class="action">
+                    <a href="#edit" class="btn btn-dark lightbox">Edit</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="address">
+                    <address>JOHN  DOE &nbsp;  &nbsp; &nbsp;421 E DRACHMAN &nbsp;  &nbsp;TUCSON AZ 85705-7598 &nbsp;  &nbsp;USA</address>
+                  </div>
+                  <div class="action">
+                    <a href="#edit" class="btn btn-dark lightbox">Edit</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="address">
+                    <address>JOHN  DOE &nbsp;  &nbsp; &nbsp;421 E DRACHMAN &nbsp;  &nbsp;TUCSON AZ 85705-7598 &nbsp;  &nbsp;USA</address>
+                  </div>
+                  <div class="action">
+                    <a href="#edit" class="btn btn-dark lightbox">Edit</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="address">
+                    <address>JOHN  DOE &nbsp;  &nbsp; &nbsp;421 E DRACHMAN &nbsp;  &nbsp;TUCSON AZ 85705-7598 &nbsp;  &nbsp;USA</address>
+                  </div>
+                  <div class="action">
+                    <a href="#edit" class="btn btn-dark lightbox">Edit</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="address">
+                    <address>JOHN  DOE &nbsp;  &nbsp; &nbsp;421 E DRACHMAN &nbsp;  &nbsp;TUCSON AZ 85705-7598 &nbsp;  &nbsp;USA</address>
+                  </div>
+                  <div class="action">
+                    <a href="#edit" class="btn btn-dark lightbox">Edit</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="address">
+                    <address>JOHN  DOE &nbsp;  &nbsp; &nbsp;421 E DRACHMAN &nbsp;  &nbsp;TUCSON AZ 85705-7598 &nbsp;  &nbsp;USA</address>
+                  </div>
+                  <div class="action">
+                    <a href="#edit" class="btn btn-dark lightbox">Edit</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="address">
+                    <address>JOHN  DOE &nbsp;  &nbsp; &nbsp;421 E DRACHMAN &nbsp;  &nbsp;TUCSON AZ 85705-7598 &nbsp;  &nbsp;USA</address>
+                  </div>
+                  <div class="action">
+                    <a href="#edit" class="btn btn-dark lightbox">Edit</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="address">
+                    <address>JOHN  DOE &nbsp;  &nbsp; &nbsp;421 E DRACHMAN &nbsp;  &nbsp;TUCSON AZ 85705-7598 &nbsp;  &nbsp;USA</address>
+                  </div>
+                  <div class="action">
+                    <a href="#edit" class="btn btn-dark lightbox">Edit</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="address">
+                    <address>JOHN  DOE &nbsp;  &nbsp; &nbsp;421 E DRACHMAN &nbsp;  &nbsp;TUCSON AZ 85705-7598 &nbsp;  &nbsp;USA</address>
+                  </div>
+                  <div class="action">
+                    <a href="#edit" class="btn btn-dark lightbox">Edit</a>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div class="popup-holder">
+    <div class="shipping-light lightbox edit-light-box" id="edit">
+      <div class="shipping-wrap">
+        <header class="header1">
+          <strong>Edit Address</strong>
+        </header>
+        <form action="#" class="shipping-details custom-form form-validation">
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <div class="input-wrap">
+                  <input type="text" id="fname" class="form-control" data-required="true">
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <div class="input-wrap">
+                  <input type="text" id="lname" class="form-control" data-required="true">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="c-name">Company Name</label>
+            <div class="input-wrap">
+              <input type="text" id="c-name" class="form-control" data-required="true">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <div class="input-wrap">
+              <input type="text" id="address" class="form-control" data-required="true">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="country">Country</label>
+                <div class="input-wrap">
+                  <select id="country" class="select3" data-required="true">
+                    <option>Usa</option>
+                    <option>Uk</option>
+                    <option>Japan</option>
+                    <option>Usa</option>
+                    <option>Uk</option>
+                    <option>Japan</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="state">State</label>
+                <div class="input-wrap">
+                  <select id="state" class="select3" data-required="true">
+                    <option>Usa</option>
+                    <option>Uk</option>
+                    <option>Japan</option>
+                    <option>Usa</option>
+                    <option>Uk</option>
+                    <option>Japan</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="zip">Zip code</label>
+                <div class="input-wrap">
+                  <input type="text" id="zip" class="form-control" data-required="true" data-type="number">
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <div class="input-wrap">
+                  <input type="text" id="phone" class="form-control" data-required="true" data-type="number">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-hold">
+            <input type="submit" value="Save Address" class="btn btn-green-3">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+.product-container{
+  .product-wrap{
+    margin: -4px -10px 4px;
+    @extend %displayreset;
+  }
+
+  h1{
+    @include media ('<desktop') {
+      margin-bottom: 15px !important;
+    }
+  }
+
+  .product-block {
+    padding: 5px 10px;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: 0;
+    margin-bottom: 41px;
+
+    @include media ('<widescreen') {
+      margin-bottom: 30px;
+    }
+
+    @include media ('<desktop') {
+      width: 33.33%;
+      margin-bottom: 20px;
+    }
+
+    @include media ('<tablet') {
+      width: 50%;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+
+    @include media ('<phone') {
+      width: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+      position: relative;
+      transition:200ms linear box-shadow;
+
+      &:hover{
+        box-shadow: 0 0 0 1px #333;
+      }
+    }
+  }
+
+  .image-block {
+    margin: 0;
+    color: #3d332a;
+    text-transform: uppercase;
+  }
+
+  .img-wrap {
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    height: 186px;
+    overflow: hidden;
+    width: 100%;
+
+    &.purple {
+      background: #6d1c5f;
+    }
+
+    &.blue {
+      background: #1b2f5d;
+    }
+
+    &.green {
+      background: #43581a;
+    }
+
+    &.grey {
+      background: #5c340d;
+    }
+  }
+
+  figcaption {
+    padding: 14px 15px 15px;
+    border: 1px solid #e0d6d6;
+    box-shadow:(0 1px 0 rgba(0,0,0,.1));
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: bold;
+    background: #fff;
+
+    @include media ('<widescreen') {
+      font-size: 14px;
+    }
+
+    @include media ('<tablet') {
+      font-size: 12px;
+    }
+  }
+
+  .name {
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  .price {
+    display: block;
+  }
+}

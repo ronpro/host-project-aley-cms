@@ -1,0 +1,689 @@
+.input-error {
+  .jcf-checkbox{
+    border-color: #c22737 !important;
+  }
+
+  .jcf-select{
+    border-color: #c22737 !important;
+  }
+}
+
+.jcf-checkbox {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  background: #fff;
+  border: 1px solid #a8cdd2;
+  margin: 0 3px 0 0;
+  height: 18px;
+  width: 18px;
+  border-radius: 2px;
+
+  span {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    color: #ed2f43;
+
+    &:after{
+      @extend .icomoon;
+      font-size: 10px;
+      content: "\e906";
+    }
+  }
+}
+
+.check-wrap{
+  overflow: hidden;
+  padding-left: 8px;
+}
+
+:root .jcf-checkbox span {
+  margin: -12px 0 0 -5px;
+}
+
+.jcf-checkbox {
+  input[type="checkbox"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+  }
+  &.jcf-checked span {
+    display: block;
+  }
+}
+
+
+.jcf-select {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  border: 1px solid #d1d1d1;
+  background: #fff;
+  min-width: 70px;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+
+  &.jcf-select-filter-select{
+    border: 0;
+    height: 30px;
+
+    .jcf-select-text {
+      color: #1f1f1f;
+      font-size: 14px;
+      line-height: 30px;
+      margin: 0 30px 0 12px;
+    }
+  }
+  &.jcf-select-select2{
+    min-width: 50px;
+    border: 0;
+    height: 40px;
+    border: 1px solid #c2bcb6;
+
+    @include media ('<desktop') {
+      height: 35px;
+    }
+
+    .jcf-select-text {
+      color: #1f1f1f;
+      font-size: 14px;
+      line-height: 38px;
+      margin: 0 25px 0 12px;
+
+      @include media ('<desktop') {
+        line-height: 33px;
+      }
+    }
+
+    .jcf-select-opener {
+      position: absolute;
+      text-align: center;
+      background: none;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      width: 12px;
+
+      &:after{
+        background: url(../images/icon05.png) no-repeat 0 50%;
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 12px;
+        height: 7px;
+        transform:translateY(-50%);
+      }
+    }
+  }
+
+  &.jcf-select-bg-gradient{
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+  }
+
+  &.jcf-select-select3{
+    min-width: 50px;
+    border: 0;
+    height: 40px;
+    border: 1px solid #c2bcb6;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+
+    @include media ('<desktop') {
+      height: 35px;
+    }
+
+    .jcf-select-text {
+      color: #1f1f1f;
+      font-size: 14px;
+      line-height: 38px;
+      margin: 0 25px 0 12px;
+
+      @include media ('<desktop') {
+        line-height: 30px;
+      }
+    }
+
+    .jcf-select-opener {
+      position: absolute;
+      text-align: center;
+      background: none;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      width: 12px;
+
+      &:after{
+        background: url(../images/icon06.jpg) no-repeat 0 50%;
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 7px;
+        height: 11px;
+        transform:translateY(-50%);
+        // display: none;
+      }
+    }
+  }
+
+  &.jcf-select-select4{
+    min-width: 50px;
+    border: 0;
+    height: 42px;
+    border: 1px solid #c2bcb6;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(244,244,244,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(244,244,244,1) 100%);
+
+    @include media ('<desktop') {
+      height: 35px;
+    }
+
+    .jcf-select-text {
+      color: #1f1f1f;
+      font-size: 13px;
+      line-height: 40px;
+      margin: 0 25px 0 12px;
+
+      @include media ('<desktop') {
+        line-height: 30px;
+      }
+    }
+
+    .jcf-select-opener {
+      position: absolute;
+      text-align: center;
+      background: #aaa;
+      bottom: 0;
+      right: 0;
+      top: 0;
+
+      &:after{
+        right: 19px;
+        top: 50%;
+        transform:translateY(-50%);
+        position: absolute;
+        content: "\e905";
+        font-size: 5px;
+        @extend .icomoon;
+        color: #4b4b4b;
+      }
+    }
+  }
+  &.jcf-select-select5{
+    border: 0;
+    height: 30px;
+    border: 1px solid #e6e4e3;
+    background:#fff;
+
+
+    .jcf-select-text {
+      color: #1f1f1f;
+      font-size: 13px;
+      line-height: 27px;
+      margin: 0 25px 0 12px;
+    }
+
+    .jcf-select-opener {
+
+      &:after{
+        right: 11px;
+        top: 50%;
+        transform:translateY(-50%);
+        position: absolute;
+        content: "\e905";
+        font-size: 5px;
+        @extend .icomoon;
+        color: #4b4b4b;
+      }
+    }
+  }
+
+  &.jcf-select-multiple-location {
+    box-shadow: inset 0px 1px 0px 0px #f2f2f2;
+    height: 42px;
+    border: 1px solid #d1d1d1;
+    background:#fff;
+
+    @include media('<desktop') {
+      height: 35px;
+    }
+
+    .jcf-select-text {
+      color: #252222;
+      font-size: 15px;
+      line-height: 38px;
+      margin: 0 35px 0 10px;
+
+      @include media('<desktop') {
+        font-size: 14px;
+        line-height: 33px;
+      }
+
+      @include media('<tablet') {
+        font-size: 13px;
+      }
+    }
+
+    .jcf-select-opener {
+
+      &:after{
+        right: 17px;
+        position: absolute;
+        top: 50%;
+        transform:translateY(-50%);
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 4px 0 4px;
+        border-color: #484545 transparent transparent transparent;
+      }
+    }
+  }
+
+  @include media('<desktop') {
+    height: 35px;
+  }
+
+  select {
+    z-index: 1;
+    left: 0;
+    top: 0;
+  }
+  .jcf-select-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: default;
+    display: block;
+    font-size: 14px;
+    line-height: 38px;
+    margin: 0 35px 0 8px;
+
+    @include media('<desktop') {
+      font-size: 13px;
+      line-height: 30px;
+    }
+  }
+
+  .jcf-select-opener {
+    position: absolute;
+    text-align: center;
+    background: #aaa;
+    bottom: 0;
+    right: 0;
+    top: 0;
+
+    &:after{
+      right: 10px;
+      top: 50%;
+      transform:translateY(-50%);
+      position: absolute;
+      content: "\e905";
+      font-size: 5px;
+      @extend .icomoon;
+      color: #4b4b4b;
+    }
+  }
+}
+
+
+body > .jcf-select-drop {
+  position: absolute;
+  margin: -1px 0 0;
+  z-index: 9999;
+  &.jcf-drop-flipped {
+    margin: 1px 0 0;
+  }
+}
+
+.jcf-select {
+  .jcf-select-drop {
+    position: absolute;
+    margin-top: 0px;
+    z-index: 9999;
+    top: 100%;
+    left: -1px;
+    right: -1px;
+  }
+  .jcf-drop-flipped {
+    bottom: 100%;
+    top: auto;
+  }
+}
+
+.jcf-select-drop .jcf-select-drop-content {
+  border: 1px solid #777;
+}
+
+.jcf-select-drop.jcf-select-filter-select .jcf-select-drop-content {
+  border: 1px solid #ccc;
+  box-shadow:(0 7px 16px rgba(0,0,0,.2));
+}
+
+.jcf-list-box {
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid #b8c3c9;
+  min-width: 200px;
+  margin: 0 15px;
+}
+
+.jcf-list {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  background: #fff;
+  line-height: 1.2;
+  font-size: 13px;
+  width: 100%;
+
+  @include media('<desktop') {
+    font-size: 12px;
+  }
+
+  .jcf-list-content {
+    vertical-align: top;
+    display: inline-block;
+    overflow: auto;
+    width: 100%;
+  }
+  ul {
+    @extend %listreset;
+
+    li {
+      overflow: hidden;
+      display: block;
+    }
+  }
+  .jcf-overflow {
+    overflow: auto;
+  }
+  .jcf-option {
+    overflow: hidden;
+    cursor: default;
+    display: block;
+    padding: 5px 9px;
+    color: #3b3b3b;
+    height: 1%;
+  }
+  .jcf-disabled {
+    background: #fff !important;
+    color: #aaa !important;
+  }
+}
+
+.jcf-select-drop .jcf-hover,
+.jcf-list-box .jcf-selected {
+  background: #e6e6e6;
+  color: #000;
+}
+
+.jcf-list {
+  .jcf-optgroup-caption {
+    white-space: nowrap;
+    font-weight: bold;
+    display: block;
+    padding: 5px 9px;
+    cursor: default;
+    color: #000;
+  }
+  .jcf-optgroup .jcf-option {
+    padding-left: 30px;
+  }
+}
+
+.jcf-select-multiple-location {
+
+  .jcf-select-drop-content {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+    border: 0;
+  }
+
+  .jcf-list {
+    border: 1px solid #e0d6d6;
+    overflow: hidden;
+    ul {
+      @extend %listreset;
+      overflow: hidden;
+
+      li {
+
+        .jcf-option {
+          padding: 11px 10px 11px 45px;
+          display: block;
+          font-size: 15px;
+          line-height: 1.2;
+          position: relative;
+
+          @include media('<desktop') {
+            font-size: 14px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+          }
+
+          @include media('<tablet') {
+            font-size: 12px;
+            padding-left: 40px;
+          }
+
+          &:after {
+            top: 17px;
+            left: 14px;
+            position: absolute;
+            color: #56ad6d;
+            @extend .icomoon;
+            font-size: 8px;
+            content: "\e906";
+            opacity: 0;
+            transition:opacity 200ms linear;
+
+            @include media('<desktop') {
+              top: 14px;
+            }
+
+            @include media('<tablet') {
+              top: 12px;
+            }
+          }
+
+          &:before {
+            position: absolute;
+            top: 13px;
+            left: 10px;
+            background: #fff;
+            border: 1px solid #c7c7c7;
+            height: 18px;
+            width: 17px;
+            border-radius: 4px;
+            content: '';
+
+            @include media('<desktop') {
+              top: 9px;
+            }
+
+            @include media('<tablet') {
+              top: 7px;
+            }
+          }
+
+          &.jcf-selected {
+            &:after {
+              opacity: 1;
+            }
+          }
+        }
+
+        &+li {
+          border-top: 1px solid #dfdfdf;
+        }
+      }
+    }
+  }
+}
+
+
+.jcf-number {
+  display: inline-block;
+  position: relative;
+  height: 36px;
+  max-width: 75px;
+
+  @include media ('<desktop') {
+    max-width: 50px;
+  }
+
+  @include media ('<tablet') {
+    height: 30px;
+    max-width: 60px;
+  }
+
+  input {
+    -moz-appearance: textfield;
+    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+    }
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 3px 27px 3px 25px;
+    margin: 0;
+    height: 100%;
+    border: 0;
+    background: rgb(253,252,251);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZkZmNmYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZWViZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(253,252,251,1) 0%, rgba(238,235,232,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(253,252,251,1) 0%,rgba(238,235,232,1) 100%);
+    background: linear-gradient(to bottom, rgba(253,252,251,1) 0%,rgba(238,235,232,1) 100%);
+    border-radius: 3px;
+    border: 1px solid #e6e4e3;
+    width: 100%;
+
+    @include media ('<desktop') {
+      padding: 3px 15px;
+    }
+
+    @include media ('<tablet') {
+      border-color: #999;
+    }
+  }
+  .jcf-btn-dec,
+  .jcf-btn-inc {
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    right: 1px;
+    top: 0;
+    cursor: pointer;
+
+    @include media ('<tablet') {
+      height: 13px;
+    }
+  }
+  .jcf-btn-dec {
+    top: auto;
+    bottom: 0;
+    &:hover {
+      opacity: .7;
+    }
+  }
+  .jcf-btn-inc:hover {
+    opacity: .7;
+  }
+  &.jcf-disabled {
+    .jcf-btn-dec:hover,
+    .jcf-btn-inc:hover {
+      // background: #aaa;
+    }
+  }
+  .jcf-btn-dec:before,
+  .jcf-btn-inc:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    margin: 0 0 0 -6px;
+    border: 4px solid #aaa;
+    border-color: transparent transparent #928c88 transparent;
+
+    @include media ('<tablet') {
+      margin-top: -1px;
+    }
+  }
+  .jcf-btn-dec:before {
+    margin: -10px 0 0 -6px;
+    border-color: #928c88 transparent transparent transparent;
+
+    @include media ('<tablet') {
+      margin-top: -7px;
+    }
+  }
+  &.jcf-disabled {
+    .jcf-btn-dec:before,
+    .jcf-btn-inc:before {
+      opacity: 0.3;
+    }
+  }
+  .jcf-btn-dec.jcf-disabled:before,
+  .jcf-btn-inc.jcf-disabled:before {
+    opacity: 0.3;
+  }
+  &.jcf-disabled input {
+    background: #ddd;
+  }
+}
+
+
+.jcf-radio {
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  background: #fff;
+  border: 1px solid #afbfcc;
+  border-radius: 9px;
+  margin: 0 3px 0 0;
+  height: 13px;
+  width: 13px;
+  span {
+    display: none;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: #89ac44;
+    border-radius: 100%;
+  }
+  input[type="radio"] {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+  }
+  &.jcf-checked span {
+    display: block;
+  }
+}
